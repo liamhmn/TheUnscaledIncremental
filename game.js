@@ -74,9 +74,9 @@ function makeM1(a) {
 
 
 function buyD1() {
-  if(game.n.gte(10)) {
-    game.n = game.n.minus(10);
-    game.d1 = game.d1.add(1);
+  if(game.n.gte(1)) {
+    game.n = game.n.minus(1);
+    game.d1 = game.d1.add(100);
     if(game.u[2])
       game.dm[1] = game.dm[1].mul(OmegaNum.tetrate(game.n, game.me));
     else
@@ -115,9 +115,9 @@ function maxD1A(b) {
 }
 
 function buyD2() {
-  if(game.n.gte(1e10)) {
-    game.n = game.n.minus(1e10);
-    game.d2 = game.d2.add(1);
+  if(game.n.gte(110)) {
+    game.n = game.n.minus(1);
+    game.d2 = game.d2.add(100);
     if(game.u[2])
       game.dm[2] = game.dm[2].mul(OmegaNum.tetrate(game.n, game.me));
     else
@@ -156,9 +156,9 @@ function maxD2A(b) {
 }
 
 function buyD3() {
-  if(game.n.gte("ee10")) {
-    game.n = game.n.minus("ee10");
-    game.d3 = game.d3.add(1);
+  if(game.n.gte("e10")) {
+    game.n = game.n.minus("e10");
+    game.d3 = game.d3.add(10);
     if(game.u[2])
       game.dm[3] = game.dm[3].mul(OmegaNum.tetrate(game.n, game.me));
     else
